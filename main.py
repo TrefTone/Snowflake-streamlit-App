@@ -1,13 +1,12 @@
 import pandas as pd
 import snowflake.connector
-from cred import user, password, account
 import streamlit as st
 import plotly.express as px
 
 mydb = snowflake.connector.connect(
-    user=user,
-    password=password,
-    account=account,
+    user=st.secrets["user"],
+    password=st.secrets["password"],
+    account=st.secrets["account"],
     warehouse='compute_wh',
     database='COVID_DATA',
     schema='PUBLIC'
