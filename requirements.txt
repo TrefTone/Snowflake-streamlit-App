@@ -21,8 +21,6 @@ jsonschema-specifications==2023.12.1
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 mdurl==0.1.2
-mysql-connector-python==8.4.0
-mysqlclient==2.2.4
 numpy==1.26.4
 packaging==24.0
 pandas==2.2.2
