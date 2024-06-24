@@ -85,14 +85,14 @@ if st.button("Generate dashboard"):
         with cases:
 
             st.markdown(f"""
-                <div style="background-color:#ebd2b9; padding:10px; border-radius:5px; height:24vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div style="background-color:#ebd2b9; padding:10px; border-radius:5px; height:155px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
                     <h5 style="text-align:center;">Total Cases</h5>
                     <h3 style="text-align:center; margin: auto;">{total_cases:,}</h3>
                 </div>
                 """, unsafe_allow_html=True)
         with deaths:
             st.markdown(f"""
-                <div style="background-color:#ebd2b9; padding:10px; border-radius:5px; height:24vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div style="background-color:#ebd2b9; padding:10px; border-radius:5px; height:155px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
                     <h5 style="text-align:center;">Total Deaths</h5>
                     <h3 style="text-align:center; margin: auto;">{total_deaths:,}</h3>
                 </div>
