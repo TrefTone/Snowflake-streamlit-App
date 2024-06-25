@@ -30,8 +30,8 @@ if st.button("Generate dashboard"):
         """
     df = pd.read_sql(query, mydb)
 
-    total_cases = df['NEW_CASES'].sum()
-    total_deaths = df['NEW_DEATHS'].sum()
+    total_cases = int(df['NEW_CASES'].sum())
+    total_deaths = int(df['NEW_DEATHS'].sum())
 
     # Worldwide
     df_sum_case = df.groupby('DATE')['NEW_CASES'].sum().reset_index()
